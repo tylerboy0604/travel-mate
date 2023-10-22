@@ -25,7 +25,7 @@
         android:id="@+id/textView"
         android:layout_width="347sp"
         android:layout_height="150sp"
-        android:text="create your first board!"
+        android:text="  Create your   first board!"
         android:textColor="#332056"
         android:textSize="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,8 +36,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="110dp"
-        android:layout_height="85dp"
+        android:layout_width="92dp"
+        android:layout_height="81dp"
         android:src="@drawable/baseline_add_box_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,8 +47,10 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="83dp"
-        android:layout_height="81dp"
+        android:layout_width="82dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="4dp"
         android:src="@drawable/baseline_dashboard_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,19 +58,20 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="83dp"
-        android:layout_height="81dp"
+        android:layout_width="82dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="4dp"
         android:src="@drawable/baseline_landscape_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView5"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="83dp"
-        android:layout_height="81dp"
+        android:layout_width="82dp"
+        android:layout_height="71dp"
         android:layout_marginStart="240dp"
         android:layout_marginBottom="4dp"
         android:src="@drawable/baseline_box_24"
@@ -80,8 +83,9 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="83dp"
-        android:layout_height="81dp"
+        android:layout_width="82dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="4dp"
         android:src="@drawable/baseline_account_circle_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
