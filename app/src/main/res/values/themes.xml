@@ -6,4 +6,11 @@
     </style>
 
     <style name="Theme.Travelmate" parent="Base.Theme.Travelmate" />
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Travelmate_Home" parent="Theme.Material3.DayNight.NoActionBar">
+
+    </style>
+
+    <style name="Theme.Travelmate_Home" parent="Base.Theme.Travelmate" />
 </resources>
