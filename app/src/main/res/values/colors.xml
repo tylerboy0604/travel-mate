@@ -3,4 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="cyan">#E1E4F4</color>
+    <color name="secondair">#EAD2EE</color>
+    <color name="accent">#a242b3</color>
+
 </resources>
