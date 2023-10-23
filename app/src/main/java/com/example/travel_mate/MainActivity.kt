@@ -10,16 +10,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var buttonhome: Button = findViewById(R.id.button)
-        buttonhome.setOnClickListener(){
-            gotohome();
+        var buttonlogin: Button = findViewById(R.id.Login)
+        buttonlogin.setOnClickListener(){
+            gotologin();
         }
     }
 
 
-    fun gotohome(){
-        val activityhome = Intent(this, homepage::class.java);
-        startActivity(activityhome);
+    fun gotologin(){
+        val activitylogin = Intent(this, register::class.java);
+        startActivity(activitylogin);
 
     }
 }
