@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.449" />
 
     <Button
-        android:id="@+id/photosOrVideos"
+        android:id="@+id/AddPhotosVideos"
         android:layout_width="177dp"
         android:layout_height="48dp"
         android:text="Photo's or video's"
@@ -46,25 +46,25 @@
         app:layout_constraintVertical_bias="0.394" />
 
     <Button
-        android:id="@+id/Notes"
+        android:id="@+id/AddNotes"
         android:layout_width="177dp"
         android:layout_height="48dp"
         android:text="Notes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/photosOrVideos"
+        app:layout_constraintTop_toBottomOf="@+id/AddPhotosVideos"
         app:layout_constraintVertical_bias="0.132" />
 
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/createNewBoard"
         android:layout_width="177dp"
         android:layout_height="48dp"
         android:text="Create New Board"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Notes"
+        app:layout_constraintTop_toBottomOf="@+id/AddNotes"
         app:layout_constraintVertical_bias="0.295" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,7 +14,7 @@ class homepage : AppCompatActivity() {
 
         var buttonNewItem: ImageView = findViewById(R.id.IVNewItems)
         buttonNewItem.setOnClickListener(){
-            gotoAdditems();
+            gotoCreateList();
         }
 
         var buttonAllItems: ImageView = findViewById(R.id.AllItems)
@@ -38,7 +38,7 @@ class homepage : AppCompatActivity() {
         }
     }
 
-    fun gotoAdditems(){
+    fun gotoCreateList(){
         val activityitems = Intent(this, AddItem::class.java);
         startActivity(activityitems);
 
