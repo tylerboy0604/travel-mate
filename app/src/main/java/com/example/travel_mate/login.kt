@@ -1,51 +1,49 @@
 package com.example.travel_mate
 
-import android.content.Intent
-import android.database.Cursor
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
 
 class login : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        var buttonhome: Button = findViewById(R.id.signin)
-        buttonhome.setOnClickListener(){
-            gotohome();
+        var userInput: EditText = findViewById(R.id.EDX_UserInput)
+        var passwordInput: EditText = findViewById(R.id.EDX_passwordInput)
+        var loginButton: Button = findViewById(R.id.signin)
+        var UserInputStr = userInput.text.toString()
+//        var buttonhome: Button = findViewById(R.id.signin)
+//        buttonhome.setOnClickListener(){
+//            gotohome();
+//        }
+
+
+
+        var User = "admin"
+        var Passwd = "admin"
+
+
+        loginButton.setOnClickListener(){
+
+
+
+        if (User == UserInputStr) {
+//            val activitylogin = Intent(this, homepage::class.java);
+//            startActivity(activitylogin);
+            println("success")
+        } else{
+            println("error");
         }
-        var btnRegister: Button = findViewById(R.id.btRegister);
-        btnRegister.setOnClickListener() {
-            val intent = Intent(this, register::class.java)
-            startActivity(intent)
-        }
-
-        var btnLogin: Button = findViewById(R.id.btLogin);
-        btnLogin.setOnClickListener() {
-            var helper = MyDBHelper(applicationContext)
-            var cr: Cursor;
-
-            var editTextMail: EditText = findViewById(R.id.etMail);
-            var editTextPassword: EditText = findViewById(R.id.etPassword);
-
-
-            cr = helper.loginCheck(editTextMail.text.toString(), editTextPassword.text.toString());
-
-            if (cr.getCount() > 0) {
-                val intent = Intent(this, welcome::class.java)
-                startActivity(intent)
-            } else {
-                Toast.makeText(applicationContext, "Logingegevens zijn niet correct!", Toast.LENGTH_LONG).show()
-            }
         }
 
     }
-    fun gotohome(){
-        val activityhome = Intent(this, homepage::class.java);
-        startActivity(activityhome);
-
-
-    }
+//    fun gotohome(){
+//        val activityhome = Intent(this, homepage::class.java);
+//        startActivity(activityhome);
+//
+//
+//    }
 }
