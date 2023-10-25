@@ -1,5 +1,6 @@
 package com.example.travel_mate
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -12,9 +13,9 @@ class login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
         var userInput: EditText = findViewById(R.id.EDX_UserInput)
-        var passwordInput: EditText = findViewById(R.id.EDX_passwordInput)
+        var passwdInput: EditText = findViewById(R.id.EDX_passwordInput)
         var loginButton: Button = findViewById(R.id.signin)
-        var UserInputStr = userInput.text.toString()
+
 //        var buttonhome: Button = findViewById(R.id.signin)
 //        buttonhome.setOnClickListener(){
 //            gotohome();
@@ -27,14 +28,21 @@ class login : AppCompatActivity() {
 
 
         loginButton.setOnClickListener(){
+            var UserInputStr = userInput.text.toString()
+            var PasswdInputStr = passwdInput.text.toString()
+            println(UserInputStr)
+            println(PasswdInputStr)
 
+        if (User == UserInputStr && Passwd == PasswdInputStr) {
+            val activitylogin = Intent(this, homepage::class.java);
+            startActivity(activitylogin);
+            println("Success")
 
+        } else if(User != UserInputStr || Passwd == PasswdInputStr){
+            println("wrong user/pass")
+        }
 
-        if (User == UserInputStr) {
-//            val activitylogin = Intent(this, homepage::class.java);
-//            startActivity(activitylogin);
-            println("success")
-        } else{
+            else{
             println("error");
         }
         }
